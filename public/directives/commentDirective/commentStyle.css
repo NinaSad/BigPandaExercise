@@ -1,0 +1,12 @@
+.avatar{
+    height: 50px;
+    width: 50px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.creation-time{
+    color: #c2c2c2;
+}
+.emailInput{
+    font-weight: bold;
+}

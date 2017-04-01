@@ -1,0 +1,116 @@
+body{
+    font-family: system-ui;
+    font-size: 14px;
+}
+.col{
+    -ms-flex: 0 0 75%;
+    max-width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    min-height: 1px;
+}
+
+.col-1{
+    width: 8.333333333333%;
+}
+.col-3{
+    width: 25%;
+}
+.col-6{
+    width: 50%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.333333333333%;
+}
+.col-11{
+    width: 91.666666666667%;
+}
+.col-12{
+    width: 100%;
+}
+
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0px -15px 10px 15px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #464a4c;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.btn-submit {
+    color: #fff;
+    background-color: #33b0e2;
+    border-color: #33b0e2;
+    float: right;
+}
+.btn-submit:hover, .btn-submit.focus{
+    color: #fff;
+    background-color: #2da0ce;
+    border-color: #2da0ce;
+}
+.clear {
+    width: 95.5%;
+    border-top: 2px solid #000000;
+    margin: 18px 0px 20px 15px;
+}
+
+.form-container{
+    background-color: rgba(204, 204, 204, 0.26);
+    padding: 20px 15px 25px 15px;
+}
+/* enable absolute positioning */
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }

@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-6" style="border: 1px solid rgba(204, 204, 204, 0.46);">
+        <div class="form-container">
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-11">
+                    <input class="form-control" id="email" placeholder="Email" ng-model="newComment.email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11">
+                    <textarea class="form-control" id="comment" placeholder="Message" ng-model="newComment.message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11">
+                    <button class="btn btn-submit" ng-click="submitNewComment()">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom: 30px;margin-top: 30px;padding: 0px 15px 0px 15px;">
+            <div class="col-11">
+
+                <div class="inner-addon left-addon">
+                    <i class="glyphicon glyphicon-search" style="color: #999;"></i>
+                    <input class="form-control" id="filter" placeholder=" Filter" ng-model="searchText">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div ng-repeat="comment in comments | filter:searchText track by $index">
+                    <comment email="comment.email" message="comment.message" gravatar="comment.gravatar"
+                             created="comment.created"></comment>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

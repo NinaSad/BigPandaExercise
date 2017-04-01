@@ -1,0 +1,27 @@
+{
+  "name": "fed-exercise-big-panda",
+  "version": "1.0.0",
+  "description": "interview exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nina Goldenberg",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.17.1",
+    "express": "4.15.2",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.25",
+    "validator": "^7.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logzio/fed-exercise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/logzio/fed-exercise/issues"
+  },
+  "homepage": "https://github.com/logzio/fed-exercise#readme"
+}
